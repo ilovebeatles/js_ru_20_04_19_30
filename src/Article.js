@@ -29,6 +29,7 @@ export default class Article extends Component {
 
     getComment() {
         const {comments} = this.props.article;
+        //Я б эту проверку спрятал в CommentList
         if (comments) {
             return <CommentsList comments={comments}/>;
         }
